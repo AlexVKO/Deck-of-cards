@@ -7,5 +7,12 @@ defmodule Cards do
       "#{value} of #{suit}"
     end
   end
+
+  def shuffle(cards) do
+    Enum.shuffle(cards)
+  end
+
+  def contains?(cards, hand) do
+    Enum.member?(cards, hand)
   end
 end
